@@ -12,6 +12,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
+ * Dummy data
+ *
  * @author Miguel Guilherme
  */
 @Configuration

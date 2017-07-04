@@ -11,6 +11,8 @@ import java.util.List;
 import java.util.Optional;
 
 /**
+ * Order Service implementation
+ *
  * @author Miguel Guilherme
  */
 @RequiredArgsConstructor

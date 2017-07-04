@@ -11,6 +11,8 @@ import java.util.TimeZone;
 import static com.fasterxml.jackson.databind.SerializationFeature.WRITE_DATES_AS_TIMESTAMPS;
 
 /**
+ * Mapper config
+ *
  * @author Miguel Guilherme
  */
 @Configuration

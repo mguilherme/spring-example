@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
+ * Order controller
+ *
  * @author Miguel Guilherme
  */
 @RequiredArgsConstructor
