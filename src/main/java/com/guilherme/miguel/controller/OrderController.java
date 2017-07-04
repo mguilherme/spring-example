@@ -21,25 +21,25 @@ public class OrderController {
     private final OrderService orderService;
 
     @GetMapping
-    public List<Order> getOrders() {
-        return orderService.getOrders();
+    public List<Order> getAll() {
+        return orderService.getAll();
     }
 
     @GetMapping("/{id}")
-    public Order getOrder(@PathVariable("id") String id) {
-        return orderService.getOrder(id);
+    public Order get(@PathVariable("id") String id) {
+        return orderService.get(id);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Order createOrder(@RequestBody Order order) {
-        return orderService.createOrder(order);
+    public Order create(@RequestBody Order order) {
+        return orderService.create(order);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteOrder(@PathVariable("id") String id) {
-        orderService.deleteOrder(id);
+    public void delete(@PathVariable("id") String id) {
+        orderService.delete(id);
     }
 
 }

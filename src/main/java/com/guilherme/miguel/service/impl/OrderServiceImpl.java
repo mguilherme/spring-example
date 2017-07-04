@@ -22,27 +22,27 @@ public class OrderServiceImpl implements OrderService {
     private final OrderRepository orderRepository;
 
     @Override
-    public Order getOrder(String id) {
+    public Order get(String id) {
         return Optional.ofNullable(orderRepository.findOne(id)).orElseThrow(OrderNotFoundException::new);
     }
 
     @Override
-    public Order createOrder(Order order) {
+    public Order create(Order order) {
         return orderRepository.save(order);
     }
 
     @Override
-    public List<Order> getOrders() {
+    public List<Order> getAll() {
         return orderRepository.findAll();
     }
 
     @Override
-    public void deleteOrder(String id) {
+    public void delete(String id) {
         orderRepository.delete(id);
     }
 
     @Override
-    public Order getOrderByTitle(String title) {
+    public Order getByTitle(String title) {
         return orderRepository.findFirstByTitle(title).orElseThrow(OrderNotFoundException::new);
     }
 

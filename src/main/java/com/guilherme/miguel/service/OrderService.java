@@ -11,13 +11,13 @@ import java.util.List;
  */
 public interface OrderService {
 
-    List<Order> getOrders();
+    List<Order> getAll();
 
-    void deleteOrder(String id);
+    void delete(String id);
 
-    Order getOrderByTitle(String title);
+    Order getByTitle(String title);
 
-    Order getOrder(String id);
+    Order get(String id);
 
-    Order createOrder(Order order);
+    Order create(Order order);
 }
