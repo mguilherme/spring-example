@@ -13,9 +13,11 @@ public interface OrderService {
 
     List<Order> getOrders();
 
+    void deleteOrder(String id);
+
     Order getOrderByTitle(String title);
 
     Order getOrder(String id);
 
-    Order create(Order order);
+    Order createOrder(Order order);
 }

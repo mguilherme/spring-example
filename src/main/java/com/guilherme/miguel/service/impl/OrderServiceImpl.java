@@ -27,13 +27,18 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
-    public Order create(Order order) {
+    public Order createOrder(Order order) {
         return orderRepository.save(order);
     }
 
     @Override
     public List<Order> getOrders() {
         return orderRepository.findAll();
+    }
+
+    @Override
+    public void deleteOrder(String id) {
+        orderRepository.delete(id);
     }
 
     @Override
